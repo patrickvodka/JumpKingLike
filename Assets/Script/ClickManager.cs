@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class ClickManager : MonoBehaviour
 {
-    [SerializeField]
-    private Camera cam;
+    [SerializeField]private Camera cam;
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))

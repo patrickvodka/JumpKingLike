@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IClickable 
 {
-    void click();
+   void click();
 }
 
