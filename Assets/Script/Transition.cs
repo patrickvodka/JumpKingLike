@@ -10,7 +10,7 @@ public class Transition : MonoBehaviour
     
     public void LoadLevelTuto()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 2));
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
     IEnumerator LoadLevel(int levelIndex)
     {

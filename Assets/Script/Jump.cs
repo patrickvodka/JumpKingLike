@@ -15,10 +15,13 @@ public class Jump : MonoBehaviour
     private float jumpTimerCounter;
     public float jumpTime;
     private bool isJumping;
+    private Animator anim;
     
     void Start()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        
     }
      void FixedUpdate()
     {
@@ -38,22 +41,41 @@ public class Jump : MonoBehaviour
          {
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
+        if (moveInput == 0)
+        {
+            anim.SetBool("isRunning", false);
+        }
+        else
+        {
+            anim.SetBool("isRunning", true);
+        }
         if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))
         {
             isJumping = true;
             jumpTimerCounter = jumpTime;
             rb.velocity = Vector2.up * jumpForce;
         }
+        if (isGrounded == true)
+        {
+         anim.SetBool("isJumping", false);
+        }
+        else
+        {
+            anim.SetBool("isJumping", true);
+        }
         if(Input.GetKey(KeyCode.Space) && isJumping == true)
         {
             if (jumpTimerCounter > 0)
             {
+                
                 rb.velocity = Vector2.up * jumpForce;
                 jumpTimerCounter -= Time.deltaTime;
+                
             }
             else 
             {
                 isJumping = false;
+                
             }
         }
         if (Input.GetKeyUp(KeyCode.Space))

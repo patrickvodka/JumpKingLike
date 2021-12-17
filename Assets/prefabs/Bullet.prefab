@@ -53,7 +53,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -313,13 +313,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetVelocity2d
         - HutongGames.PlayMaker.Actions.Collision2dEvent
+        - HutongGames.PlayMaker.Actions.Collision2dEvent
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000006000000
-        actionHashCodes: 68fde3040ef11c05
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000060000000d000000
+        actionHashCodes: 68fde3040ef11c050ef11c05
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -328,7 +330,21 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
         fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -357,7 +373,13 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 
+          value: enemi
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Ground
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -381,8 +403,20 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmIntParams: []
         fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -402,12 +436,13 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - next
-        byteData: 000000000000000000
+        - next
+        byteData: 00000000000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000250000000f0000000f00000007000000010000001400000007000000110000001200000017000000130000000f000000
+        paramDataType: 14000000250000000f0000000f00000007000000010000001400000007000000110000001200000017000000130000000f0000001400000007000000110000001200000017000000130000000f000000
         paramName:
         - gameObject
         - vector
@@ -422,8 +457,15 @@ MonoBehaviour:
         - sendEvent
         - storeCollider
         - storeForce
-        paramDataPos: 00000000000000000000000001000000000000000400000001000000050000000000000000000000000000000000000002000000
-        paramByteDataSize: 00000000000000000000000000000000040000000100000000000000040000000000000000000000000000000000000000000000
+        - gameObject
+        - collision
+        - ignoreDisabled
+        - collideTag
+        - sendEvent
+        - storeCollider
+        - storeForce
+        paramDataPos: 0000000000000000000000000100000000000000040000000100000005000000000000000000000000000000000000000200000002000000090000000100000001000000010000000100000003000000
+        paramByteDataSize: 0000000000000000000000000000000004000000010000000000000004000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000
     - name: +
       description: 
       colorIndex: 0
@@ -450,13 +492,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.SetVelocity2d
         - HutongGames.PlayMaker.Actions.Collision2dEvent
+        - HutongGames.PlayMaker.Actions.Collision2dEvent
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000006000000
-        actionHashCodes: 68fde3040ef11c05
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000060000000d000000
+        actionHashCodes: 68fde3040ef11c050ef11c05
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -465,7 +509,21 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
         fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -494,7 +552,13 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 
+          value: enemi
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Ground
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -518,8 +582,20 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmIntParams: []
         fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -539,12 +615,13 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - next
-        byteData: 000000000000000000
+        - next
+        byteData: 00000000000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000250000000f0000000f00000007000000010000001400000007000000110000001200000017000000130000000f000000
+        paramDataType: 14000000250000000f0000000f00000007000000010000001400000007000000110000001200000017000000130000000f0000001400000007000000110000001200000017000000130000000f000000
         paramName:
         - gameObject
         - vector
@@ -559,8 +636,15 @@ MonoBehaviour:
         - sendEvent
         - storeCollider
         - storeForce
-        paramDataPos: 00000000000000000000000001000000000000000400000001000000050000000000000000000000000000000000000002000000
-        paramByteDataSize: 00000000000000000000000000000000040000000100000000000000040000000000000000000000000000000000000000000000
+        - gameObject
+        - collision
+        - ignoreDisabled
+        - collideTag
+        - sendEvent
+        - storeCollider
+        - storeForce
+        paramDataPos: 0000000000000000000000000100000000000000040000000100000005000000000000000000000000000000000000000200000002000000090000000100000001000000010000000100000003000000
+        paramByteDataSize: 0000000000000000000000000000000004000000010000000000000004000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000
     events:
     - name: next
       isSystemEvent: 0

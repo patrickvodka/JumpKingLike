@@ -130,7 +130,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6056503918565300243}
   - component: {fileID: -5778630081277925247}
-  - component: {fileID: 3989208539304644152}
   m_Layer: 0
   m_Name: LevelLoaderMenu
   m_TagString: Untagged
@@ -163,20 +162,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db886b41c04f5b749af3b1d431a79c3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transition: {fileID: 3517778551949722742}
-  transitionTime: 1
---- !u!114 &3989208539304644152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 904503034227932631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef17503d05293334895a64761a6c3a98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 3517778551949722742}

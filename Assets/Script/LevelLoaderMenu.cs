@@ -15,17 +15,20 @@ public class LevelLoaderMenu : MonoBehaviour
         {
             LoadNextLevel();
         }
-         void LoadNextLevel()
+        void LoadNextLevel()
         {
-            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 2));
         }
-            IEnumerator LoadLevel(int levelIndex)
+        IEnumerator LoadLevel(int levelIndex)
         {
             transition.SetTrigger("Start");
             yield return new WaitForSeconds(transitionTime);
             SceneManager.LoadScene(levelIndex);
 
         }
+         
+
+
+    }
         
     }
-}

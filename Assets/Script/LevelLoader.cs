@@ -11,23 +11,15 @@ public class LevelLoader : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKey("return"))
-        {
-            LoadNextLevel();
-        }
-
-        if (Input.GetKey("escape"))
+         if (Input.GetKey("escape"))
         {
             BackLevel();
         }
          void BackLevel()
         {
-            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex - 1));
+            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex - 2));
         }
-         void LoadNextLevel()
-        {
-            StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
-        }
+      
         IEnumerator LoadLevel(int levelIndex)
         {
             transition.SetTrigger("Start");
